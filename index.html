@@ -8,88 +8,118 @@
 <style>
     #rcorners{
         border-radius : 50%;
-        height: 400px;
-        width: 400px;
+        max-width: 100%;
+        height: auto;
         border: 4px solid white;
      }
      .nav{
-        width: 99.5vw;
+        width: 100%;
         height: 10vh;
         font-size: x-large;
         text-align : center;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        place-items: center;
+        align-items: center;
         background-color: white;
         background-attachment: fixed;
+ }
+ .scn{
+    color: black;
+    height: 30px;
+    width: 90;
+    padding: 4px;
+    border: 2px solid black;
+    text-decoration: none;
 
-     }
-     .scn{
-        color: black;
-        height: 30px;
-        width: 90;
-        padding: 4px;
-        border: 2px solid black;
-        text-decoration: none;
-
-     }
-    .bac{
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    .psy{
-        padding-top: 5cm;
-        font-size: 42px ;
-        float: left;
-        padding-left: 20%;
-        color: black;
-    }
-   .syc{
+ }
+.bac{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.psy{
+    padding-top: 5cm;
+    font-size: 42px ;
+    text-align: center;
+    color: black;
+}
+.syc{
         padding-top: 2cm;
         float: right;
         padding-right: 20%;
-   }
-   .container{
-        align-items: center;
-        justify-content: center;
-    }
-    button{
-        background-color: rgb(235, 135, 233);
-        height: 40px;
-        width: 110px;
-        border:0cap;
-        border-color: rgb(235, 135, 233);
-        border-radius: 10%;
-        cursor: pointer;
-    }
-    button:hover{
-        box-shadow: 2px 10px 10px rgb(111, 111, 111);
-        transform: translateY(-4px);
-    }
-    a:link {
-    color: red;
-    text-decoration: none;
-    }
-    a:visited {
-    color: green;
-    text-decoration: none;
-    }
-    .round{
-        border: 0cap;
-        border-radius: 500%;
-    }
-    a:hover {
-    color: hotpink;
-    text-decoration: none;
-    }
-    a:active {
-    color: blue;
-    text-decoration: none;
-    }
-     
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+button{
+background-color: rgb(235, 135, 233);
+height: 40px;
+width: 110px;
+border:0cap;
+border-color: rgb(235, 135, 233);
+border-radius: 10%;
+cursor: pointer;
+}
+button:hover{
+box-shadow: 2px 10px 10px rgb(111, 111, 111);
+transform: translateY(-4px);
+}
+a:link {
+color: red;
+text-decoration: none;
+}
+a:visited {
+color: green;
+text-decoration: none;
+}
+.round{
+border: 0cap;
+border-radius: 500%;
+}
+a:hover {
+color: hotpink;
+text-decoration: none;
+}
+a:active {
+color: blue;
+text-decoration: none;
+}
 
+css
+Copy code
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    #rcorners{
+        max-width: 80%;
+        height: auto;
+    }
+    .nav {
+        height: 8vh;
+    }
+    .psy {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #rcorners{
+        max-width: 70%;
+        height: auto;
+    }
+    .nav {
+        height: 6vh;
+        font-size: large;
+    }
+    .psy {
+        font-size: 24px;
+    }
+    .syc {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
 </style>
 <body class="bac" background="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700360787.jpg">
 <div>
@@ -117,8 +147,6 @@
                 <a href="https://www.instagram.com/rohitpandey04/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" height="50" width="50">&nbsp;
                 <a href="https://www.linkedin.com/in/rohit-pandey-708875254"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360" height="50" width="50">&nbsp;	
                 <a href="https://www.facebook.com/profile.php?id=100088945585340"><img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" height="50" width="50">
-                
-
             </div>
         </div>
    
