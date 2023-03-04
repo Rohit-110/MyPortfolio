@@ -19,6 +19,21 @@
        background-color: white;
        background-attachment: fixed;
 
+    }  
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .blink {
+        animation: blink 1s ease-in-out infinite;
     }
     .bac{
         background-repeat: no-repeat;
@@ -31,9 +46,6 @@
     .round{
         border: 0cap;
         border-radius: 500%;
-    }
-    .random{
-        
     }
     a:link {
     color: red;
@@ -63,12 +75,17 @@
     </div><center>
     <font color="black" size="5">
     <h1>Hello!</h1>
-    <p>I am <b> ROHIT PANDEY</b><br>I'm currently pursuing Bachelors in Technology in IT from IIIT Allahabad.I am currently working on Web Development Intern at Yhills. </p>
+    <p>Myself <b> ROHIT PANDEY</b><br>I'm currently pursuing Bachelors in Technology in IT from IIIT Allahabad.I am currently working on Web Development Intern at Yhills. </p>
     <p>I have done my Higher secondary schooling from C.B.S.E board.I'd scored a decent rank in JEE Mains and JEE Advanced and <br> currently studying in one of my dream college.I am fond of doing Tech related things and spend most time in<br> exploring things,participating hackathons,contests etc.</p>
     <p>My hobbies include Playing Badminton,Photography and Painting.</p>
 </font>
 <br><br><br>
-<marquee>Click on Gallery to look my Collections as Hobby</marquee>
+
+<script>
+    const blinkElement = document.querySelector(".blink");
+    blinkElement.classList.add("blink");
+</script>
+<marquee class="blink">Click on Gallery to look my Collections (as Hobby)</marquee>
 </center>
 </body>
 </html>
